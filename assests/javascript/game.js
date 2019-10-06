@@ -1,0 +1,1 @@
+var wordList = ["Rugrats", "Hey Arnold", "The Magic School Bus", "Doug", "Recess", "All That", "The Wild Thornberrys" "Pinky and The Brain", "The Famous Jet Jackson", "Smart Guy", "Sister Sister", "Gullah Gullah Island"]
