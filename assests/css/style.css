@@ -1,5 +1,12 @@
-.jumbotron {
+.jumbotron-fluid {
     text-align: center;
     background-image: url(./90sKidsTV.jpg);
     background-repeat: no-repeat;
+    font-family: 'Chewy', cursive;
+    color: white;
+    background-color: black;
+}
+
+body {
+    font-family: 'Coming Soon', cursive;
 }
