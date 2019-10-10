@@ -11,7 +11,16 @@ var win = 0;
 var loss = 0;
 var guessesleft= 6;
 
-randomWord = words[Math.floor(Math.random()*words.length)];
+function start() {
+    randomWord = words[Math.floor(Math.random()*words.length)];
+    lettersOfWord = randomWord.split("");
+    blanks = lettersOfWord.length;
+
+    for (var i = 0; i < blanks; i++) {
+        blanksAndCorrect.push("_");
+    }
+}
+
 
 // function startGame() {
 //     randomWord = words[Math.floor(Math.random() * words.length)];
