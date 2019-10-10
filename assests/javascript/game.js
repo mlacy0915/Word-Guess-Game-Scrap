@@ -15,11 +15,12 @@ function start() {
     randomWord = words[Math.floor(Math.random()*words.length)];
     lettersOfWord = randomWord.split("");
     blanks = lettersOfWord.length;
-
     for (var i = 0; i < blanks; i++) {
         blanksAndCorrect.push("_");
     }
 }
+
+document.getElementById("blanks").innerHTML = " " = blanksAndCorrect.join(" ");
 
 
 // function startGame() {
