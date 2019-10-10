@@ -5,10 +5,44 @@
     font-family: 'Chewy', cursive;
     color: white;
     background-color: black;
+    margin-bottom: 25px;
 }
 
 body {
     font-family: 'Coming Soon', cursive;
     background-color: black;
     color: white;
+    border: 5px;
+    border-color: white;
+    border-style: solid;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+.card {
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+ul {
+    color: black;
 }

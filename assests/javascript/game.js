@@ -11,66 +11,68 @@ var win = 0;
 var loss = 0;
 var guessesleft= 6;
 
-function startGame() {
-    randomWord = words[Math.floor(Math.random() * words.length)];
-    lettersOfWord = randomWord.split("");
-    blanks = lettersOfWord.length;
-    for (var i = 0; i < blanks; i++) {
-        blanksAndCorrect.push("_");
-    }
+randomWord = words[Math.floor(Math.random()*words.length)];
 
-    document.getElementById("currentword").innerHTML = " " + blanksAndCorrect.join(" ");
+// function startGame() {
+//     randomWord = words[Math.floor(Math.random() * words.length)];
+//     lettersOfWord = randomWord.split("");
+//     blanks = lettersOfWord.length;
+//     for (var i = 0; i < blanks; i++) {
+//         blanksAndCorrect.push("_");
+//     }
 
-    console.log(randomWord);
-    console.log(lettersOfWord);
-    console.log(blanks);
-    console.log(blanksAndCorrect);
-}
+//     document.getElementById("blanks").innerHTML = " " + blanksAndCorrect.join(" ");
 
-function reset() {
-    guessesleft = 6;
-    wrongGuesses = [];
-    blanksAndCorrect = [];
-    startGame()
-}
+//     console.log(randomWord);
+//     console.log(lettersOfWord);
+//     console.log(blanks);
+//     console.log(blanksAndCorrect);
+// }
 
-var letterInWord = false; 
+// function reset() {
+//     guessesleft = 6;
+//     wrongGuesses = [];
+//     blanksAndCorrect = [];
+//     startGame()
+// }
 
-for (var i = 0; i < blanks; i++) {
-    if (randomWord[i] == letter) {
-        letterInWord = true;
-    }
-}
+// var letterInWord = false; 
 
-if (letterInWord) {
-    for (var i = 0; i < blanks; i++) {
-        if (randomWord[i] == letter) {
-            blanksAndCorrect[i] = letter;
-        }
-    }
-}
+// for (var i = 0; i < blanks; i++) {
+//     if (randomWord[i] == letter) {
+//         letterInWord = true;
+//     }
+// }
 
-else {
-    wrongGuesses.push(letter);
-    guessesleft--;
-}
-console.log(blanksAndCorrect);
+// if (letterInWord) {
+//     for (var i = 0; i < blanks; i++) {
+//         if (randomWord[i] == letter) {
+//             blanksAndCorrect[i] = letter;
+//         }
+//     }
+// }
 
-function complete() {
-    console.log("Wins:" + wins + "|losses:" + losses + "| guesses left:" + guessesleft)
+// else {
+//     wrongGuesses.push(letter);
+//     guessesleft--;
+// }
+// console.log(blanksAndCorrect);
 
-    if (lettersOfWord.toString() == blanksAndCorrect.toString()) {
-        wins++;
-        reset()
+// function complete() {
+//     console.log("Wins:" + wins + "|losses:" + losses + "| guesses left:" + guessesleft)
 
-        document.getElementById("winstracker").innerHTML = " " + wins;
-    } else if (guessesleft === 0) {
-        losses++;
-        reset()
-        document.getElementById("image").src = ""
-        document.getElementById("guessesleft").innerHTML = " " + guessesleft;
-    }
+//     if (lettersOfWord.toString() == blanksAndCorrect.toString()) {
+//         wins++;
+//         reset()
 
-    document.getElementById("current ")
-}
+//         document.getElementById("winstracker").innerHTML = " " + wins;
+//     } else if (guessesleft === 0) {
+//         losses++;
+//         reset()
+//         document.getElementById("image").src = ""
+//         document.getElementById("guessesleft").innerHTML = " " + guessesleft;
+//     }
+
+//     document.getElementById("current ")
+// }
 
